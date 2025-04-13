@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="college.css">
+<title>
+kmit.in
+</title>
+</head>
+<body>
+<h1>KMIT STUDENT PORTAL</h1>
+<h2>kmit Narayanguda Hyd 5000029</h2>
+<h3>Student Login: </h3>
+<div class="login-container">
+<form action="http://localhost:5000/submit" method="post" id="Form">
+Enter name<br><input type="text" name="name" id="name" placeholder="Enter name" required><br>
+Enter mobile no.<br><input type="number" name="number" id="number" placeholder="Enter phone number" required> <br>
+Enter RollNo.<br><input type="text" name="rollno" id="rollno" placeholder="Enter RollNo." maxlength="10" required><br>
+Password<br><input type="password" name="password" id="password" placeholder="Enter password" maxlength="9" required><span class="glyphicon glyphicon-eye-open"></span><br>
+<h4>Select your branch</h4>
+<input type="radio" name="branch" required>CSE
+<input type="radio" name="branch">CSE-AI&ML
+<input type="radio" name="branch">IT <br>
+<button id="submit-button" class="submit-button" type ="submit" value="submit">Enter</button> 
+<button class="reset-button" type ="reset" value="reset">Reset</button>
+</form>
+</div>
+<style>
+</style>
+<h3>For more info visit: </h3>
+<a href="https://www.kmit.in">www.kmit.in </a>
+<h4> Email us at: info@kmit.in<i class="glyphicon glyphicon-envelope"></i></h4><br><br>
+<h5><i class="glyphicon glyphicon-copyright-mark"></i>Reserve Web Burns Technologies</h5> 
+<h5><i class="glyphicon glyphicon-registration-mark"></i>This Is Registered To Web Burns@Tech</h5> 
+<h6>To Contact Us:
+  Mail us:Webburns@tech.com</h6>  
+<script src="server.js"></script>
+</body>
+</html>

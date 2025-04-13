@@ -1,0 +1,104 @@
+.login-container
+{
+padding:25px;
+background:hsl(0, 100%, 48%);
+box-shadow:10px 15px 20px hsl(309, 97%, 49%);
+border-radius: 15px;
+margin-right:540px;
+margin-left: 540px;
+justify-content:center;
+transition-duration:0.1s;
+animation: color-cycle 7s infinite;
+
+}
+input, input::placeholder {
+	color: black !important;
+  }
+  
+  /* Style the input boxes */
+  input {
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 8px;
+	border-radius: 4px;
+  }
+  @keyframes color-cycle
+  {
+	0% {
+		box-shadow:10px 15px 20px hsl(20, 100%, 62%); /* red */
+	}
+	16.67% {
+		box-shadow:10px 15px 20px hsl(60,100%,61%); /* yellow */
+	}
+	33.33% {
+		box-shadow:10px 15px 20px hsl(100, 79%, 50%); /* green */
+	}
+	50% {
+		box-shadow:10px 15px 20px hsl(333, 100%, 60%); /* cyan */
+	}
+	66.67% {
+		box-shadow:10px 15px 20px hsl(180,100%,61%); /* blue */
+	}
+	83.33% {
+		box-shadow:10px 15px 20px hsl(303, 91%, 52%); /* magenta */
+	}
+	100% {
+		box-shadow:10px 15px 20px hsl(240,100%,61%); /* red */
+	}
+}
+h3
+{
+background-color:green,
+}
+body
+{
+background:hsl(0,0%,0%);
+text-align:center;
+color: white;
+}
+h1
+{
+margin-right:150px;
+margin-left: 150px;
+height:36px;
+background-color:orange;
+text-align:center;
+}
+h2
+{
+margin-right:180px;
+margin-left: 180px;
+height:30px;
+background-color:hsl(0, 100%, 48%);
+text-align:center;
+}
+.submit-button
+{
+color:black;
+background-color:hsl(150, 100%, 99%);
+border-color:black;
+border-radius: 7px;
+transition-duration:0.1s;
+}
+button:hover.submit-button
+{
+background-color:hsl(121, 100%, 50%);
+text-decoration:underline;
+}
+.reset-button
+{
+color:black;
+background-color:hsl(0, 0%, 100%);
+border-color:black;
+border-radius: 7px;
+transition-duration:0.1s;
+}
+button:hover.reset-button
+{
+background-color:hsl(0, 100%, 61%);
+text-decoration:underline;
+}
+form
+{
+font-size:15px;
+}
