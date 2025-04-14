@@ -1,6 +1,12 @@
 require('dotenv').config();
 const express = require('express');
-const { Pool } = require('pg'); // Changed from mysql2 to pg
+const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL || 'postgresql://kmit_portal_user:gajFy4M7Xb8GKgz8TxJLajkioNfRAItQ@dpg-cvuakjidbo4c739g7dj0-a.oregon-postgres.render.com/kmit_portal',
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 const bodyParser = require('body-parser');
 const path = require('path');
 const bcrypt = require('bcryptjs');
